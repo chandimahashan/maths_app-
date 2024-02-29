@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:animationCache="true"
-    tools:context=".MainActivity"
-    android:background="@drawable/untitled_design__13_">
+    android:background="@drawable/untitled_design__13_"
+    tools:context=".MainActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -42,7 +42,7 @@
             app:rowCount="2">
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/perimeter"
+                android:id="@+id/charts"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_row="0"
@@ -63,16 +63,16 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/imageViewPerimeter"
+                        android:id="@+id/imageViewCharts"
                         android:layout_width="140dp"
                         android:layout_height="140dp"
-                        android:src="@drawable/untitled_design__16_" />
+                        android:src="@drawable/untitled_design__54_" />
 
                     <TextView
-                        android:id="@+id/textViewPerimeter"
+                        android:id="@+id/textViewCharts"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Perimeter"
+                        android:text="Line Graphs"
                         android:textAlignment="center"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -80,7 +80,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/area"
+                android:id="@+id/Fractions"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_row="0"
@@ -101,16 +101,16 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/imageViewArea"
+                        android:id="@+id/imageViewFractions"
                         android:layout_width="140dp"
                         android:layout_height="140dp"
-                        android:src="@drawable/untitled_design__15_" />
+                        android:src="@drawable/untitled_design__59_" />
 
                     <TextView
-                        android:id="@+id/textViewArea"
+                        android:id="@+id/textViewFractions"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Area"
+                        android:text="Fractions"
                         android:textAlignment="center"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -118,7 +118,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/volume"
+                android:id="@+id/equations"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_row="1"
@@ -130,6 +130,82 @@
                 android:foreground="?attr/selectableItemBackground"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageViewEquations"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:src="@drawable/untitled_design__55_" />
+
+                    <TextView
+                        android:id="@+id/textViewEquations"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Equations"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageViewNote"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:src="@drawable/untitled_design__58_" />
+
+                    <TextView
+                        android:id="@+id/textViewNote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Formula"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/volume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -155,119 +231,45 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/equations"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_row="1"
-                android:layout_rowWeight="1"
-                android:layout_column="1"
-                android:layout_columnWeight="1"
-                android:layout_margin="10dp"
-                android:clickable="true"
-                android:foreground="?attr/selectableItemBackground"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="10dp">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical|center_horizontal"
-                    android:gravity="center"
-                    android:orientation="vertical">
+            <!--            <androidx.cardview.widget.CardView-->
+            <!--                android:id="@+id/Formula"-->
+            <!--                android:clickable="true"-->
+            <!--                android:foreground="?attr/selectableItemBackground"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_row="2"-->
+            <!--                android:layout_rowWeight="1"-->
+            <!--                android:layout_column="0"-->
+            <!--                android:layout_columnWeight="1"-->
+            <!--                android:layout_margin="10dp"-->
+            <!--                app:cardCornerRadius="10dp"-->
+            <!--                app:cardElevation="5dp">-->
 
-                    <ImageView
-                        android:id="@+id/imageViewEquations"
-                        android:layout_width="140dp"
-                        android:layout_height="140dp"
-                        android:src="@drawable/untitled_design__23_" />
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_gravity="center_vertical|center_horizontal"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:orientation="vertical">-->
 
-                    <TextView
-                        android:id="@+id/textViewEquations"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Equations"
-                        android:textAlignment="center"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            <!--                    <ImageView-->
+            <!--                        android:id="@+id/imageViewFormula"-->
+            <!--                        android:layout_width="140dp"-->
+            <!--                        android:layout_height="140dp"-->
+            <!--                        android:src="@drawable/untitled_design__20_" />-->
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/Formula"
-                android:clickable="true"
-                android:foreground="?attr/selectableItemBackground"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_row="2"
-                android:layout_rowWeight="1"
-                android:layout_column="0"
-                android:layout_columnWeight="1"
-                android:layout_margin="10dp"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="5dp">
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/textViewFormula"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:text="Formula"-->
+            <!--                        android:textAlignment="center"-->
+            <!--                        android:textSize="16sp"-->
+            <!--                        android:textStyle="bold" />-->
+            <!--                </LinearLayout>-->
+            <!--            </androidx.cardview.widget.CardView>-->
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical|center_horizontal"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/imageViewFormula"
-                        android:layout_width="140dp"
-                        android:layout_height="140dp"
-                        android:src="@drawable/untitled_design__20_" />
-
-                    <TextView
-                        android:id="@+id/textViewFormula"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Formula"
-                        android:textAlignment="center"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/note"
-                android:clickable="true"
-                android:foreground="?attr/selectableItemBackground"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_row="2"
-                android:layout_rowWeight="1"
-                android:layout_column="1"
-                android:layout_columnWeight="1"
-                android:layout_margin="10dp"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="5dp">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical|center_horizontal"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/imageViewNote"
-                        android:layout_width="140dp"
-                        android:layout_height="140dp"
-                        android:src="@drawable/untitled_design__21_" />
-
-                    <TextView
-                        android:id="@+id/textViewNote"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Note"
-                        android:textAlignment="center"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
 
         </GridLayout>
     </RelativeLayout>

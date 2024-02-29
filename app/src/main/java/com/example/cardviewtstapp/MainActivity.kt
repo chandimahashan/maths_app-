@@ -10,9 +10,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val secondActivityPerimeter = findViewById<CardView>(R.id.perimeter)
-        secondActivityPerimeter.setOnClickListener {
-            val intent = Intent(this, Perimeter::class.java)
+        val secondActivityPerimeterTriangle = findViewById<CardView>(R.id.charts)
+        secondActivityPerimeterTriangle.setOnClickListener {
+            val intent = Intent(this, perimeter_Triangle::class.java)
+            startActivity(intent)
+        }
+
+        val secondActivityNote = findViewById<CardView>(R.id.note)
+        secondActivityNote.setOnClickListener {
+            val intent = Intent(this, note::class.java)
             startActivity(intent)
         }
     }
